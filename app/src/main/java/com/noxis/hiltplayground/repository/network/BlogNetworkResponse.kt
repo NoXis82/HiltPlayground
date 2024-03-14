@@ -1,4 +1,4 @@
-package com.noxis.hiltplayground.repository
+package com.noxis.hiltplayground.repository.network
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
