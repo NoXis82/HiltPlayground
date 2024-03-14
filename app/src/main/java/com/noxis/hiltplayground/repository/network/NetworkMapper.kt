@@ -1,4 +1,4 @@
-package com.noxis.hiltplayground.repository
+package com.noxis.hiltplayground.repository.network
 
 import com.noxis.hiltplayground.model.Blog
 import com.noxis.hiltplayground.until.ResponseMapper

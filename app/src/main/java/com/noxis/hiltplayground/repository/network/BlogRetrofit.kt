@@ -1,4 +1,4 @@
-package com.noxis.hiltplayground.repository
+package com.noxis.hiltplayground.repository.network
 
 import retrofit2.http.GET
 
