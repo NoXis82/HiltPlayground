@@ -61,6 +61,9 @@ dependencies {
     implementation(libs.androidx.room.runtime)
     implementation (libs.androidx.room.ktx)
     kapt(libs.androidx.room.compiler)
+    //fragment_ktx
+    implementation(libs.androidx.fragment.ktx)
+    implementation (libs.androidx.lifecycle.livedata.ktx)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

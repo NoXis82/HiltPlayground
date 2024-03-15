@@ -2,7 +2,7 @@ package com.noxis.hiltplayground.di
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import com.noxis.hiltplayground.repository.network.BlogNetworkResponse
+import com.noxis.hiltplayground.repository.network.BlogRetrofit
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -29,8 +29,8 @@ object RetrofitModule {
 
     @Singleton
     @Provides
-    fun provideBlogService(retrofit: Retrofit.Builder): BlogNetworkResponse {
-        return retrofit.build().create(BlogNetworkResponse::class.java)
+    fun provideBlogService(retrofit: Retrofit.Builder): BlogRetrofit {
+        return retrofit.build().create(BlogRetrofit::class.java)
     }
 
 }
