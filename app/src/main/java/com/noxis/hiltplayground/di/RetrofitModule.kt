@@ -2,14 +2,13 @@ package com.noxis.hiltplayground.di
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import com.noxis.hiltplayground.repository.BlogRetrofit
+import com.noxis.hiltplayground.repository.network.BlogNetworkResponse
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 import javax.inject.Singleton
 
 @Module
@@ -30,8 +29,8 @@ object RetrofitModule {
 
     @Singleton
     @Provides
-    fun provideBlogService(retrofit: Retrofit.Builder): BlogRetrofit {
-        return retrofit.build().create(BlogRetrofit::class.java)
+    fun provideBlogService(retrofit: Retrofit.Builder): BlogNetworkResponse {
+        return retrofit.build().create(BlogNetworkResponse::class.java)
     }
 
 }
