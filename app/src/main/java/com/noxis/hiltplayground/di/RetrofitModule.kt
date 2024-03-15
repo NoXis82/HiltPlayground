@@ -24,7 +24,7 @@ object RetrofitModule {
     @Singleton
     @Provides
     fun provideRetrofit(gson: Gson): Retrofit.Builder {
-        return Retrofit.Builder().baseUrl("").addConverterFactory(GsonConverterFactory.create(gson))
+        return Retrofit.Builder().baseUrl("https://open-api.xyz/placeholder/").addConverterFactory(GsonConverterFactory.create(gson))
     }
 
     @Singleton
